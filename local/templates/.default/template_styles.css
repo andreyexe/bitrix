@@ -272,13 +272,13 @@ input{outline:none !important}
 }
 .nv_topnav>ul>li:first-child a{
     border-left:none;
-    /*background:url(images/nv_home.png) center no-repeat;*/
+    background:url(images/nv_home.png) center no-repeat;
 }
 
 .nv_topnav ul li a.menu-img-fon{
     background-repeat: no-repeat;
     background-position: center;
-    /*background:url(images/nv_home.png) center no-repeat;*/
+    background:url(images/nv_home.png) center no-repeat;
 }
 
 .nv_topnav>ul>li>ul{

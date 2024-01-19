@@ -1,4 +1,4 @@
-<?
+<?php
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Условия сотрудничества");
 ?><p>
@@ -50,4 +50,4 @@ $APPLICATION->SetTitle("Условия сотрудничества");
     </table>
     <p>
         &nbsp;
-    </p><? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
+    </p><?php require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
