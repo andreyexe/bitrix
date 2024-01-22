@@ -12,7 +12,7 @@ Loc::loadMessages(__FILE__);
 <head>
     <?$APPLICATION->ShowHead();?>
     <meta charset="windows-1251">
-    <title><?php $APPLICATION->ShowTitle() ?></title>
+    <title><?php /*$APPLICATION->ShowTitle() */?></title>
     <?php
 
 
@@ -23,7 +23,7 @@ Loc::loadMessages(__FILE__);
     Asset::getInstance()->addJs("/local/templates/.default/js/functions.js");
     Asset::getInstance()->addJs("/local/templates/.default/js/jquery.refineslide.js");
     Asset::getInstance()->addJs("/local/templates/.default/js/jquery.refineslide.min.js");
-    Asset::getInstance()->addString(' <link rel="shortcut icon" type="image/x-icon" href="local/templates/.default/favicon.ico"/>');
+    Asset::getInstance()->addString(' <link rel="shortcut icon" type="image/x-icon" href="/local/templates/.default/favicon.ico"/>');
     ?>
     <!--[if gte IE 9]>
     <style type="text/css">.gradient {
@@ -52,7 +52,7 @@ Loc::loadMessages(__FILE__);
             <div class="mn_content">
                 <div class="main_post">
                     <div class="main_title">
-                        <p class="title">Новости</p>
+                        <p class="title"><?php $APPLICATION->ShowTitle() ?></p>
                     </div>
 
                     <!-- workarea -->
