@@ -12,7 +12,7 @@ Loc::loadMessages(__FILE__);
 <head>
     <?$APPLICATION->ShowHead();?>
     <meta charset="windows-1251">
-    <title><?php /*$APPLICATION->ShowTitle() */?></title>
+    <title><?php $APPLICATION->ShowProperty("title")?></title>
     <?php
 
 
