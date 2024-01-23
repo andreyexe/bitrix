@@ -23,17 +23,19 @@ use Bitrix\Main\Localization\Loc;
                 <?php echo Loc::getMessage("WORKING_TIME"); ?> <span class="workhours">ежедневно с 9-00 до 18-00</span>
             </td>
             <td style="width:232px">
-                <form action="">
-                    <div class="hd_search_form" style="float:right;">
-                        <input placeholder="Поиск" type="text"/>
-                        <input type="submit" value=""/>
-                    </div>
-                </form>
+                <?php $APPLICATION->IncludeComponent(
+                    "bitrix:search.form",
+                    "search_head",
+                    Array(
+                        "PAGE" => "#SITE_DIR#search/",
+                        "USE_SUGGEST" => "N"
+                    )
+                );?>
             </td>
         </tr>
         <tr>
             <td style="padding-top: 11px;">
-                <?$APPLICATION->IncludeComponent(
+                <?php $APPLICATION->IncludeComponent(
                     "bitrix:system.auth.form",
                     "auth",
                     Array(
